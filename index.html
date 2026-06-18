@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serenity 한국 공급망 병목 리서치</title>
+<style>
+:root{
+  --bg:#f7f5f0;--surface:#fff;--ink:#1a1a18;--ink-soft:#5c5a54;--line:#e3e0d8;
+  --accent:#0f4c3a;--accent-soft:#e7f0ec;
+  --serif:"Apple SD Gothic Neo","Noto Serif KR",Georgia,serif;
+  --sans:"Apple SD Gothic Neo","Pretendard","Noto Sans KR",-apple-system,sans-serif;
+  --mono:"SF Mono","JetBrains Mono",ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px 80px}
+header{border-bottom:3px solid var(--ink);padding:60px 0 28px;margin-bottom:36px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h1{font-family:var(--serif);font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2}
+.sub{margin-top:14px;color:var(--ink-soft);font-size:15px;max-width:640px}
+.disc{margin-top:20px;background:var(--ink);color:#f3f1ea;padding:10px 16px;font-size:12.5px;border-radius:3px}
+.card{display:block;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;padding:22px 26px;margin-bottom:16px;text-decoration:none;color:inherit;transition:transform .12s ease,box-shadow .12s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.card .tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--accent);padding:2px 9px;border-radius:10px;margin-bottom:10px}
+.card .tag.alt{background:var(--ink-soft)}
+.card h2{font-family:var(--serif);font-size:20px;font-weight:800;margin-bottom:6px}
+.card p{font-size:14px;color:var(--ink-soft)}
+.card .fmt{margin-top:10px;font-family:var(--mono);font-size:11px;color:var(--accent)}
+.sec{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin:32px 0 14px;border-bottom:1px solid var(--line);padding-bottom:8px}
+footer{margin-top:60px;padding-top:20px;border-top:2px solid var(--ink);font-size:12px;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Serenity Chokepoint Research · Korea Equity</div>
+  <h1>한국 공급망 병목 주식 리서치</h1>
+  <p class="sub">Serenity(@aleabitoreddit)의 공급망 병목(chokepoint) 방법론으로 한국 KOSPI/KOSDAQ 종목을 분석한 리서치 모음입니다. 데이터 기준일은 각 리포트에 표기.</p>
+  <div class="disc">⚠ 본 자료는 리서치 우선순위 정리이며 매수/매도 권고가 아닙니다. 모든 투자 판단과 책임은 독자에게 있습니다. "미검증" 표기 항목은 KRX/DART 원문 대조가 필요합니다.</div>
+</header>
+
+<div class="sec">대표 리포트</div>
+
+<a class="card" href="2026-06-KR-portfolio-20.html">
+  <span class="tag">HTML · 2026-06</span>
+  <h2>포트폴리오 20종목 상세 분석</h2>
+  <p>반도체·전력·안보 공급망의 20개 종목을 병목 강도 × 증거 경도 × 상대 모멘텀 3축으로 티어 분류. 종목별 카점·증거·리스크·판정 카드 + KOSPI 대비 초과수익률 차트.</p>
+  <div class="fmt">→ 브라우저에서 바로 보기</div>
+</a>
+
+<div class="sec">근거 자료 (Markdown)</div>
+
+<a class="card" href="2026-06-KR-supply-chain-scan.md">
+  <span class="tag alt">MD · 2026-06</span>
+  <h2>테마 스캔 — 공급망 병목 후보 발굴</h2>
+  <p>AI 반도체·전력 인프라 사슬을 레이어별로 분해하고 병목 후보 37개 풀에서 우선 연구 명단을 도출한 1차 스캔.</p>
+  <div class="fmt">→ GitHub에서 보기</div>
+</a>
+
+<a class="card" href="2026-06-KR-price-momentum.md">
+  <span class="tag alt">MD · 2026-06</span>
+  <h2>주가 모멘텀 — 상대적 저상승 판정</h2>
+  <p>워치리스트 종목의 1·3·6개월 수익률을 KOSPI/KOSDAQ과 비교해 "시장 대비 덜 오른" 종목을 판별.</p>
+  <div class="fmt">→ GitHub에서 보기</div>
+</a>
+
+<footer>
+  Serenity Chokepoint Research · 리서치 지원 목적이며 투자 권고가 아닙니다.<br>
+  매매 결정과 책임은 독자에게 있습니다.
+</footer>
+</div>
+</body>
+</html>
